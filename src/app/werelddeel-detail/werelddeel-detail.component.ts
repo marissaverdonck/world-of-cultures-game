@@ -1,6 +1,10 @@
 // voeg modules en componenten toe
 import { Component, OnInit, Input } from '@angular/core';
 import { Land } from '../land';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { LandService }  from '../land.service';
+
 
 // Metadata van het component waaronder de Element selector
 @Component({
@@ -9,11 +13,25 @@ import { Land } from '../land';
   styleUrls: ['./werelddeel-detail.component.css']
 })
 export class WerelddeelDetailComponent implements OnInit {
-  // exporteer de selected input naar landen
-  @Input() land: Land;
-  constructor() { }
+  land: Land;
 
-  ngOnInit() {
+  constructor(
+  private route: ActivatedRoute,
+  private landService: LandService,
+  private location: Location
+  ) { }
+
+  ngOnInit(): void {
+    this.getLand();
+  }
+  
+  getLand(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.landService.getLand(id)
+      .subscribe(land => this.land = land);
+  } 
+  goBack(): void {
+    this.location.back();
   }
 
 }

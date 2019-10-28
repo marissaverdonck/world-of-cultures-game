@@ -1,11 +1,10 @@
 <h2>Landen</h2>
 <ul class="landen">
   <!-- Loop over de heroes data heen - maak een class aan wanneer selected (voor css) - click event-->
-  <li *ngFor="let land of landen" [class.selected]="land === selectedLand" (click)="onSelect(land)">
-    <!-- Geef uit de loop de id en e name van heroes -->
-    <span class="badge">{{land.id}}</span> {{land.name}}
+  <li *ngFor="let land of landen">
+    <a routerLink="/detail/{{land.id}}">
+      <!-- Geef uit de loop de id en e name van heroes -->
+      <span class="badge">{{land.id}}</span> {{land.name}}
+    </a>
   </li>
 </ul>
-<!-- [hero]="selectedHero" is an Angular property binding -->
-<app-werelddeel-detail [land]="selectedLand">
-</app-werelddeel-detail>

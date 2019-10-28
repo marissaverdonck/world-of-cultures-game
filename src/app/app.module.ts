@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { WerelddeelComponent } from './werelddeel/werelddeel.component';
 import { FormsModule } from '@angular/forms';
 import { WerelddeelDetailComponent } from './werelddeel-detail/werelddeel-detail.component';
-import { MessagesComponent } from './messages/messages.component'; // <-- NgModel lives here
+import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgModel lives here
 
 // Elk component moet hier declared worden
 @NgModule({
@@ -13,12 +15,14 @@ import { MessagesComponent } from './messages/messages.component'; // <-- NgMode
     AppComponent,
     WerelddeelComponent,
     WerelddeelDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   // import Modules van de Angular bibliotheek
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

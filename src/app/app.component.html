@@ -1,5 +1,9 @@
 <!-- Haalt waardes op uit app.component.ts (interpolation binding) -->
 <h1>{{title}}</h1>
-<!-- Haalt component heroes op met de Element selector -->
-<app-werelddeel></app-werelddeel>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/werelddeel">Werelddelen</a>
+</nav>
+<!-- Haalt component op met de Element selector -->
+<router-outlet></router-outlet>
 <app-messages></app-messages>
