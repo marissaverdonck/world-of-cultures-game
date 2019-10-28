@@ -1,0 +1,18 @@
+<h2>My Heroes</h2>
+<ul class="landen">
+  <li *ngFor="let land of landen" [class.selected]="land === selectedLand" (click)="onSelect(land)">
+    <span class="badge">{{land.id}}</span> {{land.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedHero">
+
+  <h2>{{selectedLand.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedLand.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedLand.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>
