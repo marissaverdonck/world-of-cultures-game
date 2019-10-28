@@ -4,14 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { WerelddeelComponent } from './werelddeel/werelddeel.component';
 import { FormsModule } from '@angular/forms';
-import { WerelddeelDetailComponent } from './werelddeel-detail/werelddeel-detail.component'; // <-- NgModel lives here
+import { WerelddeelDetailComponent } from './werelddeel-detail/werelddeel-detail.component';
+import { MessagesComponent } from './messages/messages.component'; // <-- NgModel lives here
 
 // Elk component moet hier declared worden
 @NgModule({
   declarations: [
     AppComponent,
     WerelddeelComponent,
-    WerelddeelDetailComponent
+    WerelddeelDetailComponent,
+    MessagesComponent
   ],
   // import Modules van de Angular bibliotheek
   imports: [

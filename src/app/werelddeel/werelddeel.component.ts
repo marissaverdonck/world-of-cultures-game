@@ -1,6 +1,7 @@
 // werelddeel component class
 
 // voeg modules en componenten toeimport { Component, OnInit } from '@angular/core';
+import { LandService } from '../land.service';
 import { Component, OnInit } from '@angular/core';
 import { Land } from '../land';
 import { LANDEN } from '../data';
@@ -15,15 +16,21 @@ import { LANDEN } from '../data';
 // exporteerd properties van dit component 
 export class WerelddeelComponent implements OnInit {
   // landen krijgt de data uit LANDEN
-landen = LANDEN;
 selectedLand: Land;
+landen: Land[];
 
-  constructor() { }
+  constructor(private landService: LandService) { }
 
   ngOnInit() {
+    this.getLanden();
   }
    // wijst het geklikte land toe aan het geselecteerde component. 
   onSelect(land: Land): void {
     this.selectedLand = land;
   }
+  getLanden(): void {
+    this.landService.getLanden()
+    .subscribe(landen => this.landen = landen);
+  }
+
 }
