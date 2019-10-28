@@ -1,18 +1,11 @@
-<h2>My Heroes</h2>
+<h2>Landen</h2>
 <ul class="landen">
+  <!-- Loop over de heroes data heen - maak een class aan wanneer selected (voor css) - click event-->
   <li *ngFor="let land of landen" [class.selected]="land === selectedLand" (click)="onSelect(land)">
+    <!-- Geef uit de loop de id en e name van heroes -->
     <span class="badge">{{land.id}}</span> {{land.name}}
   </li>
 </ul>
-
-<div *ngIf="selectedHero">
-
-  <h2>{{selectedLand.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedLand.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedLand.name" placeholder="name"/>
-    </label>
-  </div>
-
-</div>
+<!-- [hero]="selectedHero" is an Angular property binding -->
+<app-werelddeel-detail [land]="selectedLand">
+</app-werelddeel-detail>

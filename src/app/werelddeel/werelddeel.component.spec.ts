@@ -1,5 +1,5 @@
+//voeg modules en componenten toe
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { WerelddeelComponent } from './werelddeel.component';
 
 describe('WerelddeelComponent', () => {
