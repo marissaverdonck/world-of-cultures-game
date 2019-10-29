@@ -1,6 +1,12 @@
-# Wereld Culturen Game
+# Musea Wereld Culturen
+Musea wereldculturen bestaat uit het Volkenkundemuseum Leiden, Afrika Museum in Berg en Dal en het Wereldmuseum in Rotterdam.
+De museums hebben een koloniaal verleden. Er zijn 500.000 voorwerpen en 1000.000 foto's en documenten op voorraad. Aan ons de uitdaging het koloniaal verhaal te vertellen aan een specifieke doelgroep uit onze samenleving. Dit doen we aan de hand van de website en te werken met de database.
 
-## Het concept
+<img width="800" alt="Tropenmuseum" src="https://user-images.githubusercontent.com/43657951/67070047-47d82900-f17f-11e9-8362-e461a3f5b3e2.jpg">
+
+_Afbeelding: Tropenmuseum. Bron: Tropenmuseum.nl_
+
+## Het Concept
 Deze app is een spel waarbij kinderen spelenderwijs kennis maken met verschillende culturen over de Wereld. Er kan gekozen worden voor een werelddeel op de kaart. Er worden verchillende afbeeldingen getoond van culturen. De gebruiker moet raden welke afbeelding bij dit werelddeel hoort. Wanneer 5 keer een goed antwoord gegeven is heeft de gebruiker het werelddeel ontdekt en kan door naar een volgend werelddeel. Het spel is klaar wanneer alle werelddelen ontdekt zijn. 
 
 ### Afbeelding 1. Kies een werelddeel
