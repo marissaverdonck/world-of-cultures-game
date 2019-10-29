@@ -7,7 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { WerelddeelDetailComponent } from './werelddeel-detail/werelddeel-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
-import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgModel lives here
+import { DashboardComponent } from './dashboard/dashboard.component'; 
+import { HttpClientModule } from "@angular/common/http";
 
 // Elk component moet hier declared worden
 @NgModule({
@@ -16,13 +17,14 @@ import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgM
     WerelddeelComponent,
     WerelddeelDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
   // import Modules van de Angular bibliotheek
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
