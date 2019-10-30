@@ -9,6 +9,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component'; 
 import { HttpClientModule } from "@angular/common/http";
+import { ImageComponent } from './image/image.component';
 
 // Elk component moet hier declared worden
 @NgModule({
@@ -18,6 +19,7 @@ import { HttpClientModule } from "@angular/common/http";
     WerelddeelDetailComponent,
     MessagesComponent,
     DashboardComponent,
+    ImageComponent,
   ],
   // import Modules van de Angular bibliotheek
   imports: [

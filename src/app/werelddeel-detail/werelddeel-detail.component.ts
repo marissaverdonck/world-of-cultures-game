@@ -4,6 +4,7 @@ import { Land } from '../land';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { LandService }  from '../land.service';
+import { AppComponent } from '';
 
 
 // Metadata van het component waaronder de Element selector
@@ -13,7 +14,7 @@ import { LandService }  from '../land.service';
   styleUrls: ['./werelddeel-detail.component.css']
 })
 export class WerelddeelDetailComponent implements OnInit {
-  land: Land;
+land: Land;
 
   constructor(
   private route: ActivatedRoute,

@@ -1,13 +1,10 @@
+<!-- ngIf: Als er op een land is geklikt -->
 <div *ngIf="land">
 
-  <h2>{{land.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{land.id}}</div>
-  <div>
-    <label>name:
-              <input [(ngModel)]="land.name" placeholder="name"/>
-            </label>
-  </div>
-
+  <h2>Welkom in {{land.name | uppercase}}</h2>
+  <p>Kan jij raden welke afbeelding uit {{land.name}} komt? Klik op de juiste afbeelding.
+  </p>
+  <app-image></app-image>
 
   <button (click)="goBack()">go back</button>
 </div>
