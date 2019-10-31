@@ -7,7 +7,7 @@ import { WerelddeelDetailComponent }  from './werelddeel-detail/werelddeel-detai
 
 const routes: Routes = [
 // Bestaande routes bekend maken. Path is de string in de URL, gaat naar de component
-{ path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+{ path: '', redirectTo: '/werelddeel', pathMatch: 'full' },
 { path: 'werelddeel', component: WerelddeelComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: WerelddeelDetailComponent },

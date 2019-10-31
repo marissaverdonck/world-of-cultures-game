@@ -28,6 +28,7 @@ h1 {
   min-width: 20em;
   background-color: #d5ebea;
   padding-bottom: 2em;
+  height: 50em;
 }
 
 .kaart a img {
@@ -56,22 +57,22 @@ h1 {
 #Azie {
   position: absolute;
   top: 18em;
-  left: 73%;
+  left: 71%;
 }
 
 #Amerika {
   position: absolute;
   top: 17em;
-  left: 17%;
+  left: 23%;
 }
 
-#Oceanië {
+#Oceanie {
   position: absolute;
   top: 33em;
-  left: 80%;
+  left: 75%;
 }
 
-#Eurazië {
+#Eurazie {
   position: absolute;
   top: 17em;
   left: 45%;
@@ -84,7 +85,7 @@ div p {
   font-weight: bold;
   font-size: 1.3em;
   padding: 1em;
-  margin: -2em .5em .5em .5em;
+  margin: -3em .5em .5em .5em;
   display: inline-block;
 }
 

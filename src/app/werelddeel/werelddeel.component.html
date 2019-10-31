@@ -1,3 +1,6 @@
+<app-dashboard>
+</app-dashboard>
+
 <section class="kaart">
   <h1>Kies een werelddeel</h1>
   <img src="/assets/images/wereld.png">
@@ -8,7 +11,9 @@
     </a>
   </li>
   <div *ngIf="selectedLand">
-    <p> Ga naar {{selectedLand.name}} > </p>
+    <a routerLink="/detail/{{selectedLand.id}}">
+      <p> Ga naar {{selectedLand.name}} > </p>
+    </a>
   </div>
 
 </section>

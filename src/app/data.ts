@@ -5,7 +5,7 @@ import { Land } from './land';
 export const LANDEN: Land[] = [
   { id: 11, name: 'Afrika' },
   { id: 12, name: 'Azie' },
-  { id: 13, name: 'Oceanië' },
+  { id: 13, name: 'Oceanie' },
   { id: 14, name: 'Amerika' },
-  { id: 15, name: 'Eurazië' },
+  { id: 15, name: 'Eurazie' },
 ];

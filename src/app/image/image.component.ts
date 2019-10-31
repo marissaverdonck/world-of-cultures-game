@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-image',
@@ -24,6 +25,19 @@ export class ImageComponent {
   check3 = "";
   responseData: object [];
   results: object [];
+  count: number = 0;
+  wrong: "";
+  private location: Location
+  countGood() {
+    this.count++ ;
+    console.log(this.count) ;
+    if (this.count == 5){
+console.log("gefeliciteerd")
+    }
+    else {
+      // naar nieuwe categorie
+    }
+    }
 
   constructor(private http: HttpClient) {
       this.http.get(this.url1).subscribe(response1=> {
@@ -48,8 +62,11 @@ export class ImageComponent {
        this.afbeeldingLink3 = this.data[randomImage].imageLink.value;
        console.log(response3)
 });
-  }
+
+
+
 }​
 
 
 
+}

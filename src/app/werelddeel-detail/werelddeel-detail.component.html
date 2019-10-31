@@ -1,6 +1,6 @@
 <!-- ngIf: Als er op een land is geklikt -->
 <div *ngIf="land">
-  <button (click)="goBack()">< Terug</button>
+  <button (click)="goBack()"><Terug</button>
   <header>
     <h1>{{land.name | uppercase}}</h1>
     <img src="/assets/images/{{land.name}}.png">
@@ -8,5 +8,6 @@
 
   <p>Kan jij raden welke afbeelding uit {{land.name}} komt? Klik op de juiste afbeelding.
   </p>
+  <p>Categorie: kleding</p>
   <app-image></app-image>
 </div>
