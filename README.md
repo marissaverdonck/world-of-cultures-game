@@ -15,34 +15,53 @@ Deze app is een spel waarbij kinderen spelenderwijs kennis maken met verschillen
 ### Afbeelding 2. Raad de juiste afbeelding bij het werelddeel
 <img width="700" alt="applicatie1" src="https://user-images.githubusercontent.com/43657951/67805164-c2af1700-fa90-11e9-88b3-fcbc576b1be8.png">
 
-### Afbeelding 3. Gefeliciteerd, 5 van de 5 vragen zijn goed beantwoord.
-<img width="700" alt="applicatie1" src="https://user-images.githubusercontent.com/43657951/67805399-423ce600-fa91-11e9-8ca1-c6acfc74bb64.png">
 
-## Instaleer
+## Feature 
+De Feature is het spel waarbij het doel is de hele wereld te ontdekken. Wanneer de gebruiker 5 keer een goed antwoord heeft gegeven bij een land, is het land ontdekt en kan de gebruiker naar het volgende land reizen.
+
+## Onderzoek
+Bekijk hoe ik op dit idee gekomen en zie het onderzoek in de [Wiki](https://github.com/marissaverdonck/BlokTech_DatingApp/wiki)
+
+## Installatie
+1. Open de terminal
+
+2. Navigeer in de CLI naar de map in de computer waar de applicatie geinstaleer kan worden
+
+3. Type <br/>
+```
+Git clone https://github.com/marissaverdonck/frontend-applications.git
+```
+
+4. Installeer Angular<br/>
+```
+npm install -g @angular/cli
+```
+
+5. Installeer de dependecies<br/>
+```
+npm install
+```
+
+## Gebruik
+Om de applicatie te openen, ga in de CLI naar de map van de applicatie en type
+```
+ng serve --open
+```
+Open de browser en navigeer naar `http://localhost:4200/`
+De website wordt geopend.
+
+## Angular
+Om componenten aan te maken gebruik: `ng generate component component-name`
+Kijk voor meer informatie naar [Angular](https://angular.io/tutorial/toh-pt0)
+
+## Database structuur
+Data wordt opgehaald uit de [collectie wereldculturen](https://collectie.wereldculturen.nl). De Data is opgebouwd als een thesaurus. Via SPARQL kan data worden opgevraagd. Ik zoek eerst naar locatie per werelddeel en daarna op categorie en type. 
+
+<img width="500" alt="Database NMVW collectie" src="https://user-images.githubusercontent.com/43657951/66906874-b0e96080-f008-11e9-949b-32b8e92b61a4.png">
+<img width="800" alt="Schermafbeelding 2019-10-18 om 08 08 58" src="https://user-images.githubusercontent.com/43657951/67069849-b7014d80-f17e-11e9-9ac1-4ddb59a5cae7.png">
+
+## License
+[MIT License](https://github.com/marissaverdonck/BlokTech_DatingApp/blob/master/license)
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
