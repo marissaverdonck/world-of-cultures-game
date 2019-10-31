@@ -1,14 +1,14 @@
-<h2>Kies een werelddeel</h2>
+<section class="kaart">
+  <h1>Kies een werelddeel</h1>
+  <img src="/assets/images/wereld.png">
+  <!-- Loop over de heroes data heen - maak een class aan wanneer selected (voor css) - click event-->
 
-
-<img src="/assets/images/wereld.png">
-<!-- Loop over de heroes data heen - maak een class aan wanneer selected (voor css) - click event-->
-<ul class="landen">
-
-  <li *ngFor="let land of landen">
-    <a routerLink="/detail/{{land.id}}">
-      <!-- Geef uit de loop de id en e name van heroes -->
-      <span class="badge">{{land.id}}</span> {{land.name}}
+  <li *ngFor="let land of landen" id="{{land.name}}" (mouseover)="onSelect(land)">
+    <a routerLink="/detail/{{land.id}}"><img src="/assets/images/pointer_green.png">
     </a>
   </li>
-</ul>
+  <div *ngIf="selectedLand">
+    <p> Ga naar {{selectedLand.name}} > </p>
+  </div>
+
+</section>

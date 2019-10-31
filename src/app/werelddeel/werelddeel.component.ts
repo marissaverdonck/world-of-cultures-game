@@ -17,11 +17,19 @@ export class WerelddeelComponent implements OnInit {
   // landen krijgt de data uit LANDEN
 
 landen: Land[];
+selectedLand: Land;
+
+
 
   constructor(private landService: LandService) { }
 
+
   ngOnInit() {
     this.getLanden();
+  }
+
+  onSelect(land: Land): void {
+    this.selectedLand = land;
   }
 
   getLanden(): void {

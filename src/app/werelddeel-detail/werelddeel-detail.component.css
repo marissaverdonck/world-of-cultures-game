@@ -1,5 +1,36 @@
 /* HeroDetailComponent's private CSS styles */
 
+header {
+  margin: .5em;
+}
+
+header img {
+  width: 100%;
+  max-height: 14em;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 1.5em;
+  color: #ea4e55;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: .5em;
+  position: relative;
+  top: 3em;
+  display: inline;
+}
+
+p {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ea4e55;
+  margin: 1em .5em;
+}
+
 label {
   display: inline-block;
   width: 3em;
@@ -15,22 +46,13 @@ input {
 }
 
 button {
-  margin-top: 20px;
-  font-family: Arial;
-  background-color: #eee;
+  margin: .5em;
+  font-family: Montserrat;
   border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  cursor: hand;
+  color: #ea4e55;
+  position: absolute;
 }
 
 button:hover {
-  background-color: #cfd8dc;
-}
-
-button:disabled {
-  background-color: #eee;
-  color: #ccc;
-  cursor: auto;
+  font-weight: 600;
 }

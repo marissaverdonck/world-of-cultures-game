@@ -4,7 +4,6 @@ import { Land } from '../land';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { LandService }  from '../land.service';
-import { AppComponent } from '';
 
 
 // Metadata van het component waaronder de Element selector
