@@ -17,15 +17,15 @@ Deze app is een spel waarbij kinderen spelenderwijs kennis maken met verschillen
 
 
 ## Feature 
-De Feature is het spel waarbij het doel is de hele wereld te ontdekken. Wanneer de gebruiker 5 keer een goed antwoord heeft gegeven bij een land, is het land ontdekt en kan de gebruiker naar het volgende land reizen.
+De Feature is het spel waarbij het doel is de hele wereld te ontdekken. Per werelddeel worden vragen gesteld. Wanneer de gebruiker 5 keer een goed antwoord heeft gegeven bij een land, is het land ontdekt en kan de gebruiker naar het volgende land reizen.
 
 ## Onderzoek
-Bekijk hoe ik op dit idee gekomen en zie het onderzoek in de [Wiki](https://github.com/marissaverdonck/BlokTech_DatingApp/wiki)
+Bekijk hoe ik op dit idee gekomen ben en zie het onderzoek in de [Wiki](https://github.com/marissaverdonck/BlokTech_DatingApp/wiki)
 
 ## Installatie
 1. Open de terminal
 
-2. Navigeer in de CLI naar de map in de computer waar de applicatie geinstaleer kan worden
+2. Navigeer in de CLI naar de map waar de applicatie geinstaleerd kan worden
 
 3. Type <br/>
 ```
@@ -43,7 +43,7 @@ npm install
 ```
 
 ## Gebruik
-Om de applicatie te openen, ga in de CLI naar de map van de applicatie en type
+Om de applicatie te openen, ga in de CLI naar de map van de applicatie en typ
 ```
 ng serve --open
 ```
@@ -52,7 +52,7 @@ De website wordt geopend.
 
 ## Angular
 Om componenten aan te maken gebruik: `ng generate component component-name`
-Kijk voor meer informatie naar [Angular](https://angular.io/tutorial/toh-pt0)
+Kijk voor meer informatie op [Angular](https://angular.io/tutorial/toh-pt0)
 
 ## Database structuur
 Data wordt opgehaald uit de [collectie wereldculturen](https://collectie.wereldculturen.nl). De Data is opgebouwd als een thesaurus. Via SPARQL kan data worden opgevraagd. Ik zoek eerst naar locatie per werelddeel en daarna op categorie en type. 
@@ -61,7 +61,7 @@ Data wordt opgehaald uit de [collectie wereldculturen](https://collectie.wereldc
 <img width="800" alt="Schermafbeelding 2019-10-18 om 08 08 58" src="https://user-images.githubusercontent.com/43657951/67069849-b7014d80-f17e-11e9-9ac1-4ddb59a5cae7.png">
 
 ## License
-[MIT License](https://github.com/marissaverdonck/BlokTech_DatingApp/blob/master/license)
+[MIT License](https://github.com/marissaverdonck/frontend-applications/blob/master/license)
 
 
 
