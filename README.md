@@ -47,7 +47,10 @@ Om de applicatie te openen, ga in de CLI naar de map van de applicatie en typ
 ```
 ng serve --open
 ```
-Open de browser en navigeer naar `http://localhost:4200/`
+Open de browser en navigeer naar 
+```
+http://localhost:4200/
+```
 De website wordt geopend.
 
 ## Angular
