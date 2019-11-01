@@ -53,14 +53,15 @@ console.log("gefeliciteerd")}
           this.afbeeldingLink1 = this.data[randomImage].imageLink.value;
           console.log(response1)
       });
+      
       this.http.get(this.url2).subscribe(response2=> {
         const responseData = response2;
         this.data = response2.results.bindings;
         let randomImage = Math.floor(Math.random() * Math.floor(response2.results.bindings.length))
          this.afbeeldingLink2 = this.data[randomImage].imageLink.value;
           console.log(response2)
-       
     });
+
     this.http.get(this.url3).subscribe(response3=> {
       const responseData = response3;
       this.data = response3.results.bindings;

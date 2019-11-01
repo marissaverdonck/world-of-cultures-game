@@ -22,7 +22,8 @@ land: Land;
   private location: Location
   ) { }
   // ngOnInit: injected all required dependencies and run a piece of code at different stages of the component
-  // Called after the constructor and called  after the first ngOnChanges() 
+  // Called after the constructor
+  // Void is used where there is no data type. For example, in return type of functions that do not return any value
   ngOnInit(): void {
     this.getLand();
   }

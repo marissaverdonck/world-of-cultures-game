@@ -20,7 +20,7 @@ selectedLand: Land;
 
   constructor(private landService: LandService) { }
   // ngOnInit: injected all required dependencies and run a piece of code at different stages of the component
-  // Called after the constructor and called  after the first ngOnChanges() 
+  // Called after the constructor 
   ngOnInit() {
     this.getLanden();
   }
@@ -28,7 +28,7 @@ selectedLand: Land;
   onSelect(land: Land): void {
     this.selectedLand = land;
   }
-
+  //The Service could get data from anywhere, a web service, local storage, or a mock data source.
   getLanden(): void {
     this.landService.getLanden()
     .subscribe(landen => this.landen = landen);

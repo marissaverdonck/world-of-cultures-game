@@ -4,8 +4,8 @@
 <section class="kaart">
   <h1>Kies een werelddeel</h1>
   <img src="/assets/images/wereld.png">
-  <!-- Loop over de heroes data heen - maak een class aan wanneer selected (voor css) - click event-->
 
+  <!-- Loop over de heroes data heen - maak een class aan wanneer selected (voor css) - click event-->
   <li *ngFor="let land of landen" id="{{land.name}}" (mouseover)="onSelect(land)">
     <a routerLink="/detail/{{land.id}}"><img src="/assets/images/pointer_green.png">
     </a>
@@ -15,5 +15,4 @@
       <p> Ga naar {{selectedLand.name}} > </p>
     </a>
   </div>
-
 </section>
