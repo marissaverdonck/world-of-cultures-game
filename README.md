@@ -54,7 +54,9 @@ http://localhost:4200/
 De website wordt geopend.
 
 ## Angular
-Om componenten aan te maken gebruik: `ng generate component component-name`
+Om componenten aan te maken gebruik: 
+```ng generate component component-name
+```
 Kijk voor meer informatie op [Angular](https://angular.io/tutorial/toh-pt0)
 
 ## Database structuur
