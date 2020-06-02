@@ -7,7 +7,7 @@ De museums hebben een koloniaal verleden. Er zijn 500.000 voorwerpen en 1000.000
 _Afbeelding: Tropenmuseum. Bron: Tropenmuseum.nl_
 
 ## Het Concept
-Deze app is een spel waarbij kinderen spelenderwijs kennis maken met verschillende culturen over de Wereld. Er kan gekozen worden voor een werelddeel op de kaart. Er worden verchillende afbeeldingen getoond van culturen. De gebruiker moet raden welke afbeelding bij dit werelddeel hoort. Wanneer 5 keer een goed antwoord gegeven is heeft de gebruiker het werelddeel ontdekt en kan door naar een volgend werelddeel. Het spel is klaar wanneer alle werelddelen ontdekt zijn. 
+Deze app is een spel waarbij kinderen spelenderwijs kennis maken met verschillende culturen over de Wereld. Er kan gekozen worden voor een werelddeel op de kaart. Er worden verschillende afbeeldingen getoond van culturen. De gebruiker moet raden welke afbeelding bij dit werelddeel hoort. Wanneer 5 keer een goed antwoord gegeven is heeft de gebruiker het werelddeel ontdekt en kan door naar een volgend werelddeel. Het spel is klaar wanneer alle werelddelen ontdekt zijn. 
 
 ### Afbeelding 1. Kies een werelddeel
 <img width="700" alt="applicatie1" src="https://user-images.githubusercontent.com/43657951/67805641-a069c900-fa91-11e9-837b-8aa2e610ff14.png">
